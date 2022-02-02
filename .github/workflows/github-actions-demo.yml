@@ -6,5 +6,6 @@ jobs:
     steps:
     - run: |
           ls ${{ github.workspace }}
-    - run: make ${{ github.workspace }}/hello.c
-    - run: ./${{ github.workspace }}/hello.c
+    - run: cd ${{ github.workspace }}
+    - run: make hello.c
+    - run: ./hello
