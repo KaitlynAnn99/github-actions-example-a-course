@@ -7,6 +7,6 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
       - name: Run the test
-      - run: cd ${{ github.workspace }}
+        run: cd ${{ github.workspace }}
       - run: make hello
       - run: ./hello
