@@ -7,5 +7,5 @@ jobs:
     - run: |
           ls ${{ github.workspace }}
     - run: cd ${{ github.workspace }}
-    - run: make hello.c
+    - run: make hello
     - run: ./hello
